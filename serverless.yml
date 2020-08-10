@@ -3,6 +3,13 @@ app: udagram-client
 name: react-starter
 component: website
 
+provider:
+  environment:
+    API_URL: ""
+    AUTH_DOMAIN: ""
+    AUTH_CLIENT_ID: ""
+    AUTH_CALLBACK_URL: ""
+
 inputs:
   src:
     src: .

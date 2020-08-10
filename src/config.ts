@@ -1,7 +1,7 @@
-export const apiEndpoint = '...'
+export const apiEndpoint = process.env.API_URL || "..."
 
 export const authConfig = {
-  domain: 'https://d1o1bo6bje38f6.cloudfront.net/',
-  clientId: '...',
-  callbackUrl: 'http://localhost:3000/callback'
+  domain: process.env.AUTH_DOMAIN || '...',
+  clientId: process.env.AUTH_CLIENT_ID || '...',
+  callbackUrl: process.env.AUTH_CALLBACK_URL || 'http://localhost:3000/callback'
 }
